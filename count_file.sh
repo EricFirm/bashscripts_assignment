@@ -2,12 +2,12 @@
 
 
 
-COUNT=$1
+FILES=$1
 
-if [ -d "$COUNT" ]; then
- FILE_COUNT=$(find "$COUNT" -type f | wc -l)
- echo "There are $FILE_COUNT files in '$COUNT'."
+if [ -d "$FILES" ]; then
+ FILE_COUNT=$(find "$FILES" -type f | wc -l)
+ echo "There are $FILE_COUNT files in '$FILES'."
 else
- echo "'$COUNT' folder is not available. "
+ echo "'$FILES' folder is not available. "
 fi
 
